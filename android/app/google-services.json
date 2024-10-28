@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "104732623249",
+    "project_id": "zeuus-replica",
+    "storage_bucket": "zeuus-replica.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104732623249:android:0df1cb44b447b5e0241a30",
+        "android_client_info": {
+          "package_name": "zeus.app.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZovkbHAHwcLwp9EPIYf6vEZGDKTRNZNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
