@@ -21,7 +21,7 @@ class MyServices extends GetxService {
     //   fcmNotification();
     // FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
 
-    await FlutterWindowManager.addFlags(FlutterWindowManager.FLAG_SECURE);
+  await   FlutterWindowManager.addFlags(FlutterWindowManager.FLAG_SECURE);
     sharedPreferences = await SharedPreferences.getInstance();
     return this;
   }

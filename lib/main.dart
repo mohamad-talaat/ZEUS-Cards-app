@@ -22,6 +22,8 @@ void main() async {
  // await Upgrader.clearSavedSettings(); // REMOVE this for release builds
   runApp(const MyApp());
 }
+
+ 
 /////////////////////////////////////////
 /////////////////////////////////////////////
 ///////////////////////////////////////////////
@@ -31,6 +33,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     LocaleController controller = Get.put(LocaleController());
+    
     return ScreenUtilInit(
         // designSize: const Size(360, 690),
         minTextAdapt: true,

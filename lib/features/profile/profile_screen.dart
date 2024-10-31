@@ -6,6 +6,7 @@ import 'package:zeus/core/services/services.dart';
 import 'package:zeus/features/chat%20support/all.dart';
 
 import '../../core/constant/color.dart';
+import 'package:upgrader/upgrader.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({
@@ -38,7 +39,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
       return myServices.sharedPreferences.getString(name).toString();
     }
 
-    return Scaffold(
+    return UpgradeAlert(
+        upgrader: Upgrader(  debugDisplayAlways: true,
+        durationUntilAlertAgain: const Duration(days: 1),
+    ),
+    child:Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Center(
@@ -204,7 +209,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ),
         ],
       ),
-    );
+     ) );
   }
 
   Widget _buildProfileAvatar() {
